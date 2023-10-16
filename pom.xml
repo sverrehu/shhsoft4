@@ -7,7 +7,30 @@
     <artifactId>shhsoft4</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>shhsoft4</name>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>A collection of some of Sverre's Java utilities. Most of them age-old, but still usable.</description>
+    <url>https://github.com/sverrehu/shhsoft4</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/license/mit/</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Sverre H. Huseby</name>
+            <email>shh@thathost.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/sverrehu/shhsoft4.git</connection>
+        <developerConnection>scm:git:ssh://github.com:sverrehu/shhsoft4.git</developerConnection>
+        <url>https://github.com/sverrehu/shhsoft4/tree/main</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
