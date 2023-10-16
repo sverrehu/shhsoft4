@@ -20,7 +20,6 @@ public final class CalendarUtils {
      * @param      cal     a day in the week.  this object is not
      *                     changed.
      * @return     a newly created <CODE>Calendar</CODE>.
-     * @author     Sverre H. Huseby
      */
     public static Calendar firstDayOfWeek(final Calendar cal) {
         final Calendar ret = (Calendar) cal.clone();
@@ -59,7 +58,6 @@ public final class CalendarUtils {
      *             compared to the start date, or <CODE>&lt;0</CODE> if
      *             it is in the past.  the absolute value is the number
      *             of days to step.
-     * @author     Sverre H. Huseby
      */
     public static int getDaysBetween(final Calendar cal1, final Calendar cal2) {
         final long diff = getMsBetween(cal1, cal2);
@@ -88,7 +86,6 @@ public final class CalendarUtils {
      *             compared to the start date, or <CODE>&lt;0</CODE> if
      *             it is in the past.  the absolute value is the number
      *             of calendar week boundaries crossed.
-     * @author     Sverre H. Huseby
      */
     public static int getWeeksBetween(final Calendar cal1, final Calendar cal2) {
         final long diff = getMsBetween(cal1, cal2);

@@ -43,7 +43,6 @@ public final class StringUtils {
      *            another string.
      * @return <CODE>true</CODE> if the strings are equal when ignoring case and variations in
      *         white space, <CODE>false</CODE> otherwise.
-     * @author Sverre H. Huseby
      */
     public static boolean equalsIgnoreCaseAndSpace(final String string1, final String string2) {
         if (string1 == null) {
@@ -133,7 +132,6 @@ public final class StringUtils {
      * @param n
      *            number of characters.
      * @return the string of characters.
-     * @author Sverre H. Huseby
      */
     public static String stringOfChars(final char c, final int n) {
         final StringBuilder sb = new StringBuilder(n);
@@ -153,7 +151,6 @@ public final class StringUtils {
      * @param nw
      *            what to replace the substring with.
      * @return a string where all replacement have taken place.
-     * @author Sverre H. Huseby
      */
     public static String replace(final String s, final String old, final String nw) {
         if (s == null) {
@@ -194,7 +191,6 @@ public final class StringUtils {
      * @param nw
      *            what to replace the substring with.
      * @return a string where all replacement have taken place.
-     * @author Sverre H. Huseby
      */
     public static String replaceIgnoreCase(final String s, final String old, final String nw) {
         if (s == null) {
@@ -392,7 +388,7 @@ public final class StringUtils {
      * occurrence of one of the given separator characters, optionally trimming whitespace.
      * <P>
      * You should note the following:
-     * <UL TYPE="square">
+     * <UL>
      * <LI>The separator characters will not be part of the returned strings.</LI>
      * <LI>Empty strings (two searator characters with no other character in between) will <B>not</B>
      * be returned.</LI>
@@ -406,7 +402,6 @@ public final class StringUtils {
      *            if <CODE>true</CODE>, trim whitespace characters from the returned strings. if
      *            <CODE>false</CODE>, keep all whitespace.
      * @return a <CODE>List</CODE> of substrings.
-     * @author Sverre H. Huseby
      */
     public static List<String> split(final String s, final String separatorChars,
                                      final boolean doTrim) {
@@ -428,7 +423,7 @@ public final class StringUtils {
      * returned strings.
      * <P>
      * You should note the following:
-     * <UL TYPE="square">
+     * <UL>
      * <LI>The separator characters will not be part of the returned strings.</LI>
      * <LI>Empty strings (two searator characters with no other character in between) will <B>not</B>
      * be returned.</LI>
@@ -439,7 +434,6 @@ public final class StringUtils {
      * @param separatorChars
      *            a string of characters that individually mark a split poing.
      * @return a <CODE>List</CODE> of substrings.
-     * @author Sverre H. Huseby
      */
     public static List<String> split(final String s, final String separatorChars) {
         return split(s, separatorChars, true);
