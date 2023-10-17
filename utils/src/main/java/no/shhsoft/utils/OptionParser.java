@@ -123,7 +123,7 @@ public final class OptionParser {
         if (arg.startsWith("-")) {
             arg = arg.substring(1);
         }
-        while (arg.length() > 0) {
+        while (!arg.isEmpty()) {
             final char c = arg.charAt(0);
             final Opt opt = findShortOpt(c);
             if (opt == null) {
