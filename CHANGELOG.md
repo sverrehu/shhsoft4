@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/sverrehu/shhsoft4/compare/v0.0.1...v0.1.0) (2023-10-17)
+
+
+### Features
+
+* first real release ([#6](https://github.com/sverrehu/shhsoft4/issues/6)) ([ebda5bb](https://github.com/sverrehu/shhsoft4/commit/ebda5bb0b74e639856b1887958f2a194f33d749d))
+
 ## [0.0.1](https://github.com/sverrehu/shhsoft4/compare/v0.0.0...v0.0.1) (2023-10-17)
 
 
