@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.0](https://github.com/sverrehu/shhsoft4/compare/v0.1.0...v0.2.0) (2023-10-20)
+
+
+### Features
+
+* add net module ([#12](https://github.com/sverrehu/shhsoft4/issues/12)) ([9a48a30](https://github.com/sverrehu/shhsoft4/commit/9a48a30caea73305ff46b556c2ed774a1303a697))
+* use Java 11 ([#10](https://github.com/sverrehu/shhsoft4/issues/10)) ([03855f9](https://github.com/sverrehu/shhsoft4/commit/03855f90ba21b98e5916b97b4ba08ef4c41cf641))
+
+
+### Bug Fixes
+
+* rewrite deprecated calls ([#13](https://github.com/sverrehu/shhsoft4/issues/13)) ([4543184](https://github.com/sverrehu/shhsoft4/commit/454318441d47b63fed7163494779b8efcac351cd))
+
 ## [0.1.0](https://github.com/sverrehu/shhsoft4/compare/v0.0.1...v0.1.0) (2023-10-17)
 
 
