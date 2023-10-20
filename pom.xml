@@ -38,6 +38,7 @@
 
     <modules>
         <module>utils</module>
+        <module>net</module>
         <module>jdbc</module>
         <module>web-utils</module>
         <module>json</module>
@@ -52,6 +53,13 @@
             <dependency>
                 <groupId>no.shhsoft</groupId>
                 <artifactId>shhsoft4-utils</artifactId>
+                <version>${project.version}</version>
+                <scope>compile</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>no.shhsoft</groupId>
+                <artifactId>shhsoft4-net</artifactId>
                 <version>${project.version}</version>
                 <scope>compile</scope>
             </dependency>
