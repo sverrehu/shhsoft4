@@ -26,22 +26,22 @@ public final class OptionParser {
         }
         try {
             if (type == Byte.TYPE || type == Byte.class) {
-                return new Byte(s);
+                return Byte.valueOf(s);
             }
             if (type == Short.TYPE || type == Short.class) {
-                return new Short(s);
+                return Short.valueOf(s);
             }
             if (type == Integer.TYPE || type == Integer.class) {
-                return new Integer(s);
+                return Integer.valueOf(s);
             }
             if (type == Long.TYPE || type == Long.class) {
-                return new Long(s);
+                return Long.valueOf(s);
             }
             if (type == Float.TYPE || type == Float.class) {
-                return new Float(s);
+                return Float.valueOf(s);
             }
             if (type == Double.TYPE || type == Double.class) {
-                return new Double(s);
+                return Double.valueOf(s);
             }
             if (type == Boolean.TYPE || type == Boolean.class) {
                 if ("1".equals(s) || "t".equalsIgnoreCase(s) || "true".equalsIgnoreCase(s)
