@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/sverrehu/shhsoft4/compare/v0.2.0...v0.3.0) (2025-01-19)
+
+
+### Features
+
+* add HttpFetcher2 from ff ([#46](https://github.com/sverrehu/shhsoft4/issues/46)) ([20a72e4](https://github.com/sverrehu/shhsoft4/commit/20a72e4b9a7a68f912bba4f6670ff1a7bd17bc68))
+
 ## [0.2.0](https://github.com/sverrehu/shhsoft4/compare/v0.1.0...v0.2.0) (2023-10-20)
 
 
