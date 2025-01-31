@@ -214,6 +214,22 @@ public final class HttpFetcher2 {
         return request(url, authorization, contentType, null, requestBody, timeoutMs, Method.POST);
     }
 
+    public byte[] post(final String url, final Map<String, String> headers, final String requestBody) {
+        return post(toUrl(url), headers, requestBody);
+    }
+
+    private byte[] post(final URL url, final Map<String, String> headers, final String requestBody) {
+        return post(url, headers, requestBody, 0);
+    }
+
+    public byte[] post(final String url, final Map<String, String> headers, final String requestBody, final int timeoutMs) {
+        return post(toUrl(url), headers, requestBody, timeoutMs);
+    }
+
+    private byte[] post(final URL url, final Map<String, String> headers, final String requestBody, final int timeoutMs) {
+        return request(url, null, null, null, headers, requestBody, timeoutMs, Method.POST);
+    }
+
     public byte[] get(final String url) {
         return get(toUrl(url));
     }
@@ -415,6 +431,10 @@ public final class HttpFetcher2 {
     }
 
     private byte[] request(final URL url, final HttpAuthorization authorization, final String contentType, final Map<String, String> keyValues, final String requestBody, final int timeoutMs, final Method method) {
+        return request(url, authorization, contentType, keyValues, null, requestBody, timeoutMs, method);
+    }
+
+    private byte[] request(final URL url, final HttpAuthorization authorization, final String contentType, final Map<String, String> keyValues, final Map<String, String> headers, final String requestBody, final int timeoutMs, final Method method) {
         if (requestBody != null && keyValues != null) {
             throw new RuntimeException("Cannot have both request body and key/value map");
         }
@@ -431,6 +451,11 @@ public final class HttpFetcher2 {
             conn.setConnectTimeout(timeoutMs);
             conn.setReadTimeout(timeoutMs);
             conn.setRequestMethod(requestMethod);
+            if (headers != null) {
+                for (final Map.Entry<String, String> header : headers.entrySet()) {
+                    conn.setRequestProperty(header.getKey(), header.getValue());
+                }
+            }
             if (authorization != null) {
                 conn.setRequestProperty("Authorization", authorization.getValue());
             }
