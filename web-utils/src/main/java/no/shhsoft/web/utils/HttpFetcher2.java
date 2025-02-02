@@ -286,6 +286,22 @@ public final class HttpFetcher2 {
         return request(url, authorization, contentType, keyValues, null, timeoutMs, Method.GET);
     }
 
+    public byte[] get(final String url, final Map<String, String> keyValues, final Map<String, String> headers) {
+        return get(toUrl(url), keyValues, headers);
+    }
+
+    private byte[] get(final URL url, final Map<String, String> keyValues, final Map<String, String> headers) {
+        return get(url, keyValues, headers, 0);
+    }
+
+    public byte[] get(final String url, final Map<String, String> keyValues, final Map<String, String> headers, final int timeoutMs) {
+        return get(toUrl(url), keyValues, headers, timeoutMs);
+    }
+
+    private byte[] get(final URL url, final Map<String, String> keyValues, final Map<String, String> headers, final int timeoutMs) {
+        return request(url, null, null, keyValues, headers, null, timeoutMs, Method.GET);
+    }
+
     public byte[] put(final String url) {
         return put(toUrl(url));
     }
