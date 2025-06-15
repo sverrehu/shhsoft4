@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.4.0](https://github.com/sverrehu/shhsoft4/compare/v0.3.0...v0.4.0) (2025-06-15)
+
+
+### Features
+
+* extend HttpFetcher2 ([3a2e010](https://github.com/sverrehu/shhsoft4/commit/3a2e0107963ad486f60305ce533b075a42bc27ba))
+* get ([2c8f029](https://github.com/sverrehu/shhsoft4/commit/2c8f02913c2bee4160d0a34dad7879bdb632a9a4))
+
+
+### Bug Fixes
+
+* new maven central publishing mechanism ([c02c46f](https://github.com/sverrehu/shhsoft4/commit/c02c46fba6620dc615079ebaed41ac0785523793))
+
 ## [0.3.0](https://github.com/sverrehu/shhsoft4/compare/v0.2.0...v0.3.0) (2025-01-19)
 
 
