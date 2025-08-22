@@ -5,7 +5,7 @@
     <groupId>no.shhsoft</groupId>
     <artifactId>shhsoft4</artifactId>
     <packaging>pom</packaging>
-    <version>0.4.1-SNAPSHOT</version>
+    <version>0.5.0</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>A collection of some of Sverre's Java utilities. Most of them age-old, but still usable.</description>

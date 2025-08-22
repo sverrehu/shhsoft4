@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/sverrehu/shhsoft4/compare/v0.4.0...v0.5.0) (2025-08-22)
+
+
+### Features
+
+* add MultiTrustStoreX509TrustManager ([#60](https://github.com/sverrehu/shhsoft4/issues/60)) ([61be427](https://github.com/sverrehu/shhsoft4/commit/61be4275528a0808bb192ed6ecfcb96a143f3ae9))
+
 ## [0.4.0](https://github.com/sverrehu/shhsoft4/compare/v0.3.0...v0.4.0) (2025-06-15)
 
 
